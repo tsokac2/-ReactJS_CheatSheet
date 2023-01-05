@@ -6,9 +6,11 @@
 
 ### Google Fonts Implementation - Custom Document
 
-A custom Document can update the <html> and <body> tags used to render a Page. This file is only rendered on the server, so event handlers like onClick cannot be used in _document.
+A custom Document can update the ```<html>``` and ```<body>``` tags used to render a Page.
 
-To override the default Document, create the file pages/_document.js as shown below:
+This file is only rendered on the server, so event handlers like onClick cannot be used in _document.
+
+To override the default Document, create the file ```pages/_document.js``` as shown below:
 
 ```
 import { Html, Head, Main, NextScript } from 'next/document'
