@@ -42,27 +42,58 @@
 **[Back To The Top](#Overview-of-the-Section)**
 #
 ### <a name="i-e">"import" & "export"</a>
-
-**Exporting**:
-
+#### Exporting:
 - Use the export keyword before a variable or function to make it available for import in other files.
 - You can export multiple named exports using curly braces ``{}``.
-- Example:
-
+**Example**:
 ```js
 export const apiKey = "your_api_key_here";
 ```
-
 - To create a default export, use the ``export default`` keyword before the value. You can only have one default export per file.
-- Example:
 
+**Example**:
 ```js 
 export default function sayHi(name) {
   console.log("Hi, " + name);
 }
 ```
+#### Importing:
+- Use the ``import`` keyword to import something from another file.
+- For named exports, specify the names of the things you want to import inside curly braces ``{}`` after the ``from`` keyword.
 
+**Example**:
+```js
+import { apiKey } from "./util.js";
+```
+- To import the default export, you don't need curly braces. Assign any name you want to the imported value after the ``from`` keyword.
 
+**Example**:
+```js
+import someName from "./util.js"; // someName can be any name
+```
+- You can import all named exports from a file using ``import * as namespace`` syntax.
+
+**Example**:
+```js
+import * as utils from "./util.js";
+console.log(utils.apiKey); // Accessing apiKey from util.js
+```
+- You can group multiple named exports and the default export into an object using import * as namespace syntax.
+**Example**:
+```js
+import * as utils from "./util.js";
+console.log(utils.apiKey); // Accessing apiKey
+console.log(utils.default); // Accessing default export
+```
+
+- Use the ``as`` keyword to assign an alias to an imported variable or function.
+- **Example**:
+```js
+import { abc as content } from "./util.js";
+console.log(content); // This will log the value of abc from util.js
+```
+
+In React projects, you might not see the type="module" attribute explicitly mentioned because the build process handles imports and exports differently.
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
