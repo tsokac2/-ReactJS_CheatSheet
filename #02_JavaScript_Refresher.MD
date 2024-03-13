@@ -20,8 +20,7 @@
 
 **Note:** When building React applications, a build process typically injects these script tags into the HTML automatically.
 
-![Js Script]()
-
+![Js Script](https://github.com/tsokac2/-_-_ReactJS_CheatSheet/blob/main/src/01.JPG)
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
