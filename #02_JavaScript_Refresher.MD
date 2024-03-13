@@ -49,7 +49,20 @@
 - You can export multiple named exports using curly braces ``{}``.
 - Example:
 
-js``export const apiKey = "your_api_key_here";``
+```js
+export const apiKey = "your_api_key_here";
+```
+
+- To create a default export, use the ``export default`` keyword before the value. You can only have one default export per file.
+- Example:
+
+```js 
+export default function sayHi(name) {
+  console.log("Hi, " + name);
+}
+```
+
+
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
