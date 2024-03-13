@@ -41,9 +41,15 @@
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
-
 ### <a name="i-e">"import" & "export"</a>
 
+**Exporting**:
+
+- Use the export keyword before a variable or function to make it available for import in other files.
+- You can export multiple named exports using curly braces ``{}``.
+- Example:
+
+js``export const apiKey = "your_api_key_here";``
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
