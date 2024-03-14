@@ -8,16 +8,15 @@
 * **[Operators](#o)**
 * **[Functions & Parameters](#f-p)**
 * **[Arrow Functions](#arrow-functions)**
+* **[Objects & Classes](#o-c)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
-
 **There are two main ways to add JavaScript code to a website**:- **
 - **Inline**: Wrap your code between <script> tags in the HTML. (Not recommended for large codebases)
 - **External Files**: Create separate JavaScript files (e.g. ``.js`` extension) and import them using ``<script>`` tags with a src attribute pointing to the file location.
 
 **Importing JavaScript Files**:
-
 - ``<script``> tag with src attribute: ``<script src="./assets/scripts/app.js"></script>``
 - Script can be placed anywhere in the ``<head>`` or ``<body>`` section of the HTML.
 - Optional ``defer`` attribute: Ensures the script executes **_after_** the HTML is parsed (recommended if your script relies on HTML elements).
@@ -255,3 +254,9 @@ JavaScript understands that the curly braces are not there to define a function 
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
+### <a name="o-c">Objects & Classes</a>
+
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+
