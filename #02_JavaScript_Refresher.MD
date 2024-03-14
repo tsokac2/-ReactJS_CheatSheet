@@ -6,6 +6,10 @@
 * **["import" & "export"](#i-e)**
 * **[Revisiting Variables & Values](#values-v)**
 * **[Operators](#o)**
+* **[Functions & Parameters](#f-p)**
+
+
+
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -128,7 +132,65 @@ console.log(userMessage); // This will output "Hello World" to the console.
 #
 ### <a name="o">Operators</a>
 
+#### Variables:
+- ``const`` and ``let`` are important for declaring variables.
+#### Operators:
+- Math operators: ``+``, ``-``, ``*``, ``/``(division)
+- String concatenation: ``+`` (combines text)
+- Comparison operators: ``===`` (equal to), ``!==`` (not equal to), ``>`` (greater than), ``<`` (less than), ``>=`` (greater than or equal to), ``<=`` (less than or equal to)
+
+#### Conditional statements:
+- ``if`` statement: executes code only if a certain condition is true. (We'll learn more about this later)
+
+#### Important code to remember:
+- ``const`` or ``let`` followed by a variable name and an equal sign (used to assign a value to the variable).
+- Math operators used with numbers (e.g., ``10 / 5``).
+- ``+`` used to concatenate strings (e.g., ``"hello" + "world"``).
+- Comparison operators used with values (e.g., ``10 === 10``).
+- ``if`` statement followed by a condition in parentheses and curly braces containing the code to execute if the condition is true (e.g., ``if (10 === 10) { ... }``).
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
+### <a name="f-p">Functions & Parameters</a>
 
+#### Defining a function:
+- Use the ``function`` keyword followed by a name (follows variable naming rules).
+- Define parameters (optional) in parenthesis after the name, separated by commas.
+- Enclose the function body (the code to be executed) in curly braces ``{}``.
+
+#### Calling a function:
+- Use the function name followed by parenthesis ``()``.
+- Provide values for the parameters (in the same order they are defined) inside the parenthesis when calling the function.
+
+#### Important concepts:
+- Functions are reusable blocks of code.
+- Parameters allow functions to accept input values.
+- The ``return`` keyword allows functions to return a value.
+- Functions can be named descriptively to improve readability.
+
+#### Code Examples:
+Defining a function with a parameter and console logging it:
+
+```js
+function greet(username) {
+  console.log(username);
+}
+```
+
+Calling the function with a value for the parameter:
+```js
+greet("Max");
+```
+Defining a function with multiple parameters and a return statement:
+```js
+function createGreeting(username, message) {
+  return "Hi, I am " + username + ". " + message;
+}
+```
+Calling the function and storing the returned value in a variable:
+```js
+const greeting = createGreeting("Max", "Hello!");
+console.log(greeting);
+```
+**[Back To The Top](#Overview-of-the-Section)**
+#
