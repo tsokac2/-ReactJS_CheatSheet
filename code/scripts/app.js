@@ -9,7 +9,9 @@
 //         console.log("Error: ", e.message);
 //     }
 // };
-
 // userAge();
 
+
+// Anonomus function
+// onClick = {() => setActiveContentIndex(0)};
 
