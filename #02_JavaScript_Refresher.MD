@@ -4,6 +4,9 @@
 * **[Adding JavaScript To A Page & How React Projects Differ](#script-js)**
 * **[React Projects Use a Build Process](#build)**
 * **["import" & "export"](#i-e)**
+* **[Revisiting Variables & Values](#values-v)**
+
+
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -94,6 +97,25 @@ console.log(content); // This will log the value of abc from util.js
 ```
 
 In React projects, you might not see the type="module" attribute explicitly mentioned because the build process handles imports and exports differently.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="">Revisiting Variables & Values</a>
+
+#### Commands:
+
+-  ``let``: This keyword is used to create a variable in JavaScript.
+-  ``const``: This keyword is used to create a constant in JavaScript.
+-  ``console.log``: This is a built-in function in JavaScript that is used to output a value to the console.
+Important concepts:
+
+Variables: Variables are used to store data. You can give them a name and use that name to refer to the data throughout your code.
+Values: Values are the actual data that is stored in variables. In JavaScript, there are different types of values, including strings, numbers, booleans, and null/undefined.
+Constants: Constants are similar to variables, but the value cannot be changed after it is assigned.
+Camel Case Notation: This is a naming convention for variables where the first word starts with a lowercase letter and subsequent words start with uppercase letters (e.g., userName).
+Code Readability: Using variables can improve the readability of your code by making it easier to understand what the code is doing.
+
+![Revisiting Variables & Values]()
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
