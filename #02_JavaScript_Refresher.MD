@@ -179,7 +179,7 @@ function greet(username) {
 
 Calling the function with a value for the parameter:
 ```js
-greet("Max");
+greet("Tomislav");
 ```
 Defining a function with multiple parameters and a return statement:
 ```js
@@ -189,7 +189,7 @@ function createGreeting(username, message) {
 ```
 Calling the function and storing the returned value in a variable:
 ```js
-const greeting = createGreeting("Max", "Hello!");
+const greeting = createGreeting("Tomislav", "Hello!");
 console.log(greeting);
 ```
 **[Back To The Top](#Overview-of-the-Section)**
