@@ -256,6 +256,66 @@ JavaScript understands that the curly braces are not there to define a function 
 #
 ### <a name="o-c">Objects & Classes</a>
 
+**Creating Objects**:
+
+- Use curly braces {} to create an object.
+- Inside the curly braces, define key-value pairs separated by colons :.
+  - Keys are property names (strings).
+  - Values can be any data type including other objects and functions.
+- Access object properties using dot notation object.propertyName.
+
+**Example**:
+```
+const user = {
+  name: "Max",
+  age: 34
+}
+console.log(user.name); // Output: "Max"
+```
+
+**Object Methods**:
+  - Objects can store functions as properties, called methods.
+  - Access methods using dot notation and call them with parentheses ``object.methodName()``.
+
+**Example**:
+```
+const user = {
+  name: "Max",
+  age: 34,
+  greet() {
+    console.log("Hello!");
+  }
+}
+user.greet(); // Output: "Hello!"
+```
+
+- The ```this`` Keyword:
+
+- Inside an object method, ``this`` refers to the current object.
+- Use ``this`` to access other properties and methods of the object.
+
+**Example**:
+```
+const user = {
+  name: "Max",
+  age: 34,
+  greet() {
+    console.log("Hello, my name is", this.name);
+  }
+}
+user.greet(); // Output: "Hello, my name is Max"
+```
+**Classes (briefly mentioned)**:
+- A blueprint for creating objects.
+- Use the class keyword to define a class.
+- A class can have methods and a constructor function.
+- Use the new keyword to create objects (instances) from a class.
+
+**Code to Remember**:
+- Creating objects with curly braces: ``{ key1: value1, key2: value2 }``
+- Accessing object properties: ``object.propertyName``
+- Calling object methods: ``object.methodName()``
+- Using ``this`` inside object methods: ``this.propertyName`` or ``this.methodName()``
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
