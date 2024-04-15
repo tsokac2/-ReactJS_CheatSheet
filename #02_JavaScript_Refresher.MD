@@ -9,6 +9,10 @@
 * **[Functions & Parameters](#f-p)**
 * **[Arrow Functions](#arrow-functions)**
 * **[Objects & Classes](#o-c)**
+* **[Arrays & Array Methods like map()](#array-methods)**
+
+
+Arrays & Array Methods like map()
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -319,4 +323,7 @@ user.greet(); // Output: "Hello, my name is Max"
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
+### <a name="array-methods">Arrays & Array Methods like map()</a>
 
+**[Back To The Top](#Overview-of-the-Section)**
+#
