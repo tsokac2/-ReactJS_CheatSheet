@@ -330,9 +330,7 @@ user.greet(); // Output: "Hello, my name is Max"
 
 - ``.push(item)`` - Adds a new item to the end of the array.
 - ``.findIndex(callbackFunction)`` - Finds the index of the first item where the callback function returns true.
-
   - The callback function takes an item as input and should return true if the item matches the search criteria.
-
   - Shorter Arrow Function version for findIndex:
 
 ```js
@@ -340,7 +338,6 @@ user.greet(); // Output: "Hello, my name is Max"
 ```
 
 - ``.map(callbackFunction)`` - Creates a new array with the results of calling the callback function on every item in the original array.
-
   - The callback function takes an item as input and should return the transformed item.
   - Shorter Arrow Function version for map:
 
