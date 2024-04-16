@@ -11,9 +11,6 @@
 * **[Objects & Classes](#o-c)**
 * **[Arrays & Array Methods like map()](#array-methods)**
 
-
-Arrays & Array Methods like map()
-
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
 **There are two main ways to add JavaScript code to a website**:- **
@@ -292,9 +289,7 @@ const user = {
 }
 user.greet(); // Output: "Hello!"
 ```
-
 - The ```this`` Keyword:
-
 - Inside an object method, ``this`` refers to the current object.
 - Use ``this`` to access other properties and methods of the object.
 
@@ -324,6 +319,37 @@ user.greet(); // Output: "Hello, my name is Max"
 **[Back To The Top](#Overview-of-the-Section)**
 #
 ### <a name="array-methods">Arrays & Array Methods like map()</a>
+
+**Arrays**:
+
+- Created using square brackets [].
+- Store ordered lists of values.
+- Accessed by index starting at 0 (first item).
+
+**Important Array Methods**:
+
+- ``.push(item)`` - Adds a new item to the end of the array.
+- ``.findIndex(callbackFunction)`` - Finds the index of the first item where the callback function returns true.
+
+  - The callback function takes an item as input and should return true if the item matches the search criteria.
+
+  - Shorter Arrow Function version for findIndex:
+
+```js
+(item) => item === 'searched_value'
+```
+
+- ``.map(callbackFunction)`` - Creates a new array with the results of calling the callback function on every item in the original array.
+
+  - The callback function takes an item as input and should return the transformed item.
+  - Shorter Arrow Function version for map:
+
+```js
+(item) => item + '!' // Example: adding exclamation mark
+```
+**Important Notes**:
+- Both ``.findIndex`` and ``.map`` create new arrays and do not modify the original array.
+- ``.map`` allows you to transform items into any kind of value (strings, objects, etc.).
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
