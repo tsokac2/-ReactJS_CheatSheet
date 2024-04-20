@@ -1,11 +1,33 @@
-const hobbies = ["Sports", "Coocking"];
-const user = {
-    name: "Max",
-    age: 34
+
+function handleTimeout() {
+    console.log("Timed out!");
 };
 
-const newHobbies = ["Rading"];
+const handleTimeout2 = () => {
+console.log("Timed out ... again!");
+};
 
-const mergedHobbies = [...hobbies, ...newHobbies];
-console.log(mergedHobbies);
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
+
+setTimeout(() => {
+    console.log("More timing out...");
+}, 4000);
+
+
+function greeter(greetFn) {
+    greetFn();
+};
+
+
+greeter(() => console.log("Hi"));
+
+function init() {
+    function greet() {
+        console.log("Hi!");
+    }
+    greet();
+};
+
+init();
 

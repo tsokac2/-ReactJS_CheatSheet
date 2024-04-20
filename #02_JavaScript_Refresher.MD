@@ -13,6 +13,7 @@
 * **[Destructuring Arrays](#destructuring-arrays)**
 * **[The Spread Operator](#spread)**
 * **[Revisiting Control Structures](#control-s)**
+* **[Using Functions as Values](#func-values)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -403,7 +404,6 @@ console.log(age); // Output: 30
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
-
 ### <a name="control-s">Revisiting Control Structures</a>
 
 **if statement** - Used to control code execution based on a condition.
@@ -433,6 +433,55 @@ const hobbies = ["sports", "cooking"];
 for (const hobby of hobbies) {
   console.log(hobby);
 }
+```
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="func-values">Using Functions as Values</a>
+**Passing Functions as Arguments**:
+- You can pass functions as values to other functions.
+- Example: ``setTimeout(function, milliseconds)`` - built-in function to set a timer.
+  - First argument: The function to be executed (passed without parentheses).
+  - Second argument: The delay in milliseconds.
+
+**Anonymous vs Named Functions**:
+- You can define functions with the ``function`` keyword or as arrow functions.
+- Both can be passed as arguments.
+- When passing a pre-defined function, use its name (without parentheses).
+
+**Important Note**:
+- Adding parentheses after the function name executes the function immediately.
+- In ``setTimeout``, we want to pass the function itself, not its return value.
+
+**Custom Functions with Function Arguments**:
+- You can create your own functions that accept functions as arguments.
+- Example: ``greeter(greetFunction)``.
+- Inside the function, call the passed function using parentheses.
+
+**Key Takeaway**:
+- Passing functions is not limited to built-in functions.
+- You can use this with custom functions as well.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="ref-prim-values">Reference vs Primitive Values</a>
+
+**Primitive values** (strings, numbers, Booleans) are stored directly in the variable and cannot be edited. Assigning a new value creates a new primitive value. (e.g. ``const userMessage = "Hi"; userMessage.concat("!") // Creates a new string``)
+
+**Reference values** (objects, arrays) store the memory address of the actual value. Editing the reference value modifies the original data. (e.g. ``const hobbies = ["sports", "cooking"]; hobbies.push("working"); // Modifies the original array``)
+
+- ``const`` prevents re-assigning the variable itself, but allows modification of the data it references (objects, arrays) using methods like ``.push``.
+
+**Important code to remember**:
+
+Primitive value example (string):
+```js
+const userMessage = "Hi";
+```
+- Editing a reference value (array) using ``.push`` method:
+
+```js
+const hobbies = ["sports", "cooking"];
+hobbies.push("working");
 ```
 **[Back To The Top](#Overview-of-the-Section)**
 #
