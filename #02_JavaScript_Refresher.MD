@@ -470,7 +470,7 @@ for (const hobby of hobbies) {
 
 **Reference values** (objects, arrays) store the memory address of the actual value. Editing the reference value modifies the original data. (e.g. ``const hobbies = ["sports", "cooking"]; hobbies.push("working"); // Modifies the original array``)
 
-![Reference value](https://github.com/tsokac2/-_-_ReactJS_CheatSheet/blob/main/src/04.JPG)
+![Reference value](https://github.com/tsokac2/-_-_ReactJS_CheatSheet/blob/main/src/4.JPG)
 
 - ``const`` prevents re-assigning the variable itself, but allows modification of the data it references (objects, arrays) using methods like ``.push``.
 
