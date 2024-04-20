@@ -1,17 +1,11 @@
-// console.log("Hello World");
+const hobbies = ["Sports", "Coocking"];
+const user = {
+    name: "Max",
+    age: 34
+};
 
-// import { userValidationHandler } from "./util.js"; // importing userValidationHandler function from "./util.js"
-// const userAge = () => {
-//     try {
-//         userValidationHandler(55);
-//         userValidationHandler("Tom");
-//     } catch(e) {
-//         console.log("Error: ", e.message);
-//     }
-// };
-// userAge();
+const newHobbies = ["Rading"];
 
-
-// Anonomus function
-// onClick = {() => setActiveContentIndex(0)};
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies);
 

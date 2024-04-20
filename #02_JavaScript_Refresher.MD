@@ -11,6 +11,8 @@
 * **[Objects & Classes](#o-c)**
 * **[Arrays & Array Methods like map()](#array-methods)**
 * **[Destructuring Arrays](#destructuring-arrays)**
+* **[The Spread Operator](#spread)**
+* **[Revisiting Control Structures](#control-s)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -383,6 +385,54 @@ const { name, age } = user;
 
 console.log(name); // Output: Alice
 console.log(age); // Output: 30
+```
+**[Back To The Top](#Overview-of-the-Section)**
+#
+
+### <a name="spread">The Spread Operator</a>
+- The spread operator in JavaScript is denoted by three dots (...).
+- It is used to merge iterables (arrays or objects) into a new iterable.
+
+**For arrays**:
+- Syntax: ``[...array1, ...array2, ... , element1, element2]``
+- This will create a new array with all elements from the first array ``(array1)``, then all elements from the second array ``(array2)``, and so on, followed by any individual elements ``(element1, element2)``.
+
+**For objects**:
+- Syntax: ``{...object1, ...object2}``
+- This will create a new object with all key-value pairs from the first object ``(object1)``, then all key-value pairs from the second object ``(object2)``, with any conflicts being overwritten by the latter object.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+
+### <a name="control-s">Revisiting Control Structures</a>
+
+**if statement** - Used to control code execution based on a condition.
+
+- Syntax: ``if (condition) { code to execute if true } else { code to execute if false }``
+- You can also have ``else if`` statements for additional conditions.
+
+**``for loop``** (iterating through an array) 
+- Used to repeat a block of code for each item in an array.
+
+Syntax: ``for (const elementName of arrayName) { code to execute for each element }``
+
+**Important Code Snippets**:
+- Checking password with if statement:
+```js
+if (password === "hello") {
+  console.log("hello works");
+} else if (password === "hello world") {
+  console.log("hello works (with lowercase L)");
+} else {
+  console.log("Access not granted");
+}
+```
+**Looping through an array with ``for...of`` loop**:
+```
+const hobbies = ["sports", "cooking"];
+for (const hobby of hobbies) {
+  console.log(hobby);
+}
 ```
 **[Back To The Top](#Overview-of-the-Section)**
 #
