@@ -10,6 +10,7 @@
 * **[Arrow Functions](#arrow-functions)**
 * **[Objects & Classes](#o-c)**
 * **[Arrays & Array Methods like map()](#array-methods)**
+* **[Destructuring Arrays](#destructuring-arrays)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -348,5 +349,40 @@ user.greet(); // Output: "Hello, my name is Max"
 - Both ``.findIndex`` and ``.map`` create new arrays and do not modify the original array.
 - ``.map`` allows you to transform items into any kind of value (strings, objects, etc.).
 
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### Destructuring arrays
+- Creates a new array on the right side of the equal sign
+- Uses square brackets on the left side to destructure the array
+- You can define new constants or variables with any names of your choice
+
+**Destructuring objects**
+- Uses curly braces on the left side to destructure the object
+- You have to use the field names that are defined in the object
+
+**Here is an example of destructuring an array in JavaScript**:
+
+```js
+const userNameData = ["Max", "Schwarzmuller"];
+
+const [firstName, lastName] = userNameData;
+
+console.log(firstName); // Output: Max
+console.log(lastName); // Output: Schwarzmuller
+```
+
+**Here is an example of destructuring an object in JavaScript**:
+
+```js
+const user = {
+  name: "Alice",
+  age: 30,
+};
+
+const { name, age } = user;
+
+console.log(name); // Output: Alice
+console.log(age); // Output: 30
+```
 **[Back To The Top](#Overview-of-the-Section)**
 #
