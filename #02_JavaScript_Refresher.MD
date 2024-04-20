@@ -14,6 +14,7 @@
 * **[The Spread Operator](#spread)**
 * **[Revisiting Control Structures](#control-s)**
 * **[Using Functions as Values](#func-values)**
+* **[Reference vs Primitive Value](#ref-prim-values)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
