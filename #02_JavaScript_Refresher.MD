@@ -487,4 +487,3 @@ const hobbies = ["sports", "cooking"];
 hobbies.push("working");
 ```
 **[Back To The Top](#Overview-of-the-Section)**
-#
