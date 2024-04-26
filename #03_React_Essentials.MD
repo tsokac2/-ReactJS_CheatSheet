@@ -2,6 +2,7 @@
 
 ### Overview of the Section
 * **[About Components!](#components)**
+* **[JSX & React Components](#jsx-com)**
 
 
 #
@@ -19,6 +20,27 @@ Here are the key points about components:
 - Components promote separation of concerns, where different components handle different parts of the UI.
 
 **Note**: This concept of components is also used in other popular front-end frameworks and even in mobile development frameworks.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="jsx-com">JSX & React Components</a>
+
+The important code snippet is related to creating a React Component:
+
+```js
+function MyComponent() {
+  // JSX code describing the UI for this component
+  return (
+    <div>
+      {/* Your HTML here */}
+    </div>
+  );
+}
+```
+**Key points**:
+- **JSX extension**: Files using JSX syntax have the ``.jsx`` extension (e.g., ``index.jsx``, ``App.jsx``).
+- **Component as a Function**: A React component is a JavaScript function starting with an uppercase letter (e.g., ``MyComponent``).
+- **Returning JSX**: The component function must return JSX code that describes the UI elements for that component.
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
