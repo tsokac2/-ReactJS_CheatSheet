@@ -10,6 +10,11 @@
 * **[Arrow Functions](#arrow-functions)**
 * **[Objects & Classes](#o-c)**
 * **[Arrays & Array Methods like map()](#array-methods)**
+* **[Destructuring Arrays](#destructuring-arrays)**
+* **[The Spread Operator](#spread)**
+* **[Revisiting Control Structures](#control-s)**
+* **[Using Functions as Values](#func-values)**
+* **[Reference vs Primitive Value](#ref-prim-values)**
 
 #
 ### <a name="script-js">Adding JavaScript To A Page & How React Projects Differ</a>
@@ -350,3 +355,135 @@ user.greet(); // Output: "Hello, my name is Max"
 
 **[Back To The Top](#Overview-of-the-Section)**
 #
+### Destructuring arrays
+- Creates a new array on the right side of the equal sign
+- Uses square brackets on the left side to destructure the array
+- You can define new constants or variables with any names of your choice
+
+**Destructuring objects**
+- Uses curly braces on the left side to destructure the object
+- You have to use the field names that are defined in the object
+
+**Here is an example of destructuring an array in JavaScript**:
+
+```js
+const userNameData = ["Max", "Schwarzmuller"];
+
+const [firstName, lastName] = userNameData;
+
+console.log(firstName); // Output: Max
+console.log(lastName); // Output: Schwarzmuller
+```
+
+**Here is an example of destructuring an object in JavaScript**:
+
+```js
+const user = {
+  name: "Alice",
+  age: 30,
+};
+
+const { name, age } = user;
+
+console.log(name); // Output: Alice
+console.log(age); // Output: 30
+```
+**[Back To The Top](#Overview-of-the-Section)**
+#
+
+### <a name="spread">The Spread Operator</a>
+- The spread operator in JavaScript is denoted by three dots (...).
+- It is used to merge iterables (arrays or objects) into a new iterable.
+
+**For arrays**:
+- Syntax: ``[...array1, ...array2, ... , element1, element2]``
+- This will create a new array with all elements from the first array ``(array1)``, then all elements from the second array ``(array2)``, and so on, followed by any individual elements ``(element1, element2)``.
+
+**For objects**:
+- Syntax: ``{...object1, ...object2}``
+- This will create a new object with all key-value pairs from the first object ``(object1)``, then all key-value pairs from the second object ``(object2)``, with any conflicts being overwritten by the latter object.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="control-s">Revisiting Control Structures</a>
+
+**if statement** - Used to control code execution based on a condition.
+
+- Syntax: ``if (condition) { code to execute if true } else { code to execute if false }``
+- You can also have ``else if`` statements for additional conditions.
+
+**``for loop``** (iterating through an array) 
+- Used to repeat a block of code for each item in an array.
+
+Syntax: ``for (const elementName of arrayName) { code to execute for each element }``
+
+**Important Code Snippets**:
+- Checking password with if statement:
+```js
+if (password === "hello") {
+  console.log("hello works");
+} else if (password === "hello world") {
+  console.log("hello works (with lowercase L)");
+} else {
+  console.log("Access not granted");
+}
+```
+**Looping through an array with ``for...of`` loop**:
+```
+const hobbies = ["sports", "cooking"];
+for (const hobby of hobbies) {
+  console.log(hobby);
+}
+```
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="func-values">Using Functions as Values</a>
+**Passing Functions as Arguments**:
+- You can pass functions as values to other functions.
+- Example: ``setTimeout(function, milliseconds)`` - built-in function to set a timer.
+  - First argument: The function to be executed (passed without parentheses).
+  - Second argument: The delay in milliseconds.
+
+**Anonymous vs Named Functions**:
+- You can define functions with the ``function`` keyword or as arrow functions.
+- Both can be passed as arguments.
+- When passing a pre-defined function, use its name (without parentheses).
+
+**Important Note**:
+- Adding parentheses after the function name executes the function immediately.
+- In ``setTimeout``, we want to pass the function itself, not its return value.
+
+**Custom Functions with Function Arguments**:
+- You can create your own functions that accept functions as arguments.
+- Example: ``greeter(greetFunction)``.
+- Inside the function, call the passed function using parentheses.
+
+**Key Takeaway**:
+- Passing functions is not limited to built-in functions.
+- You can use this with custom functions as well.
+
+**[Back To The Top](#Overview-of-the-Section)**
+#
+### <a name="ref-prim-values">Reference vs Primitive Values</a>
+
+**Primitive values** (strings, numbers, Booleans) are stored directly in the variable and cannot be edited. Assigning a new value creates a new primitive value. (e.g. ``const userMessage = "Hi"; userMessage.concat("!") // Creates a new string``)
+
+**Reference values** (objects, arrays) store the memory address of the actual value. Editing the reference value modifies the original data. (e.g. ``const hobbies = ["sports", "cooking"]; hobbies.push("working"); // Modifies the original array``)
+
+![Reference value](https://github.com/tsokac2/-_-_ReactJS_CheatSheet/blob/main/src/4.JPG)
+
+- ``const`` prevents re-assigning the variable itself, but allows modification of the data it references (objects, arrays) using methods like ``.push``.
+
+**Important code to remember**:
+
+Primitive value example (string):
+```js
+const userMessage = "Hi";
+```
+- Editing a reference value (array) using ``.push`` method:
+
+```js
+const hobbies = ["sports", "cooking"];
+hobbies.push("working");
+```
+**[Back To The Top](#Overview-of-the-Section)**
